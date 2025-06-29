@@ -14,13 +14,33 @@
  }
 /*** Spinner End ***/
 
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+}
+
 /* carousel mobile view */
 @media (max-width: 767.98px) {
-    #carouselExampleSlidesOnly video {
-        height: 75vh;
-        object-fit: cover;
-        width: 100%;
+    .carousel-item img {
+        height: 400px;
     }
+
+    #about-us {
+        background-image: url('/img/bg-sm-2.jpg');
+        background-size: cover;
+    }
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 330px;
+    position: relative;
+}
+.parallax-1 {
+    background-image: url('/img/parallex-img-1.jpg');
 }
 
 .back-to-top {
@@ -147,11 +167,6 @@ h4, h5, h6, .h4, .h5, .h6 {
         visibility: visible;
         opacity: 1;
     }
-}
-
-.dropdown .dropdown-menu a:hover {
-    background: var(--bs-primary);
-    color: var(--bs-white);
 }
 
 #searchModal .modal-content {
@@ -368,81 +383,6 @@ h4, h5, h6, .h4, .h5, .h6 {
     opacity: 1;
 }
 /*** Youtube Video End ***/
-
-
-/*** Blog Start ***/
-.blog-item {
-    position: relative;
-}
-
-.blog-item img {
-    transition: 0.5s;
-}
-
-.blog-item:hover img {
-    transform: scale(1.3)
-}
-
-.blog-item .blog-content {
-    position: relative;
-    transform: translateY(-50%);
-    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
-}
-
-.blog-item .blog-content a.btn h5 {
-    transition: 0.5s;
-}
-
-.blog-item:hover .blog-content a.btn h5 {
-    color: var(--bs-primary) !important;
-}
-/*** Blog End ***/
-
-
-/*** Team Start ***/
-.team-item {
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-
-.team-item .team-icon {
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-.team-item .team-icon .share-link {
-    opacity: 0;
-    transition: 0.9s;
-}
-
-.team-item:hover .share-link {
-    opacity: 1;
-}
-
-.team-item .team-content {
-    transition: 0.9s;
-}
-
-.team-item:hover .team-content {
-    background: var(--bs-primary) !important;
-    color: var(--bs-dark) !important;
-}
-
-.team-item .team-content h4,
-.team-item .team-content p {
-    transition: 0.5s;
-}
-
-.team-item:hover .team-content h4 {
-    color: var(--bs-dark) !important;
-}
-
-.team-item:hover .team-content p {
-    color: var(--bs-white);
-}
-/*** Team End ***/
 
 
 /*** testimonial Start ***/
