@@ -19,10 +19,18 @@
     object-fit: cover;
 }
 
+.custom-bg {
+    background-color: rgba(0, 0, 0, 0.01);
+}
+
 /* carousel mobile view */
 @media (max-width: 767.98px) {
-    .carousel-item img {
+    .carousel-item video {
         height: 400px;
+    }
+
+    .custom-bg {
+        background-color: rgba(0, 0, 0, 0.4);
     }
 
     #about-us {
